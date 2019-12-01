@@ -8,7 +8,9 @@ public class Subset {
         int[] nums = {1,2,3};
         List<List<Integer>> res = new ArrayList<>();
         backtrack(0, nums, res, new ArrayList<Integer>());
-        System.out.println(res);
+         for (int i = 0; i < res.size(); i++){
+            System.out.println(res.get(i));
+        }
     }
     public static void backtrack(int i, int[] nums, List<List<Integer>> res, ArrayList<Integer> tmp) {
         res.add(new ArrayList<>(tmp));

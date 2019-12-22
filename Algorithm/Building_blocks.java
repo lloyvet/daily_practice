@@ -23,7 +23,7 @@ public class Building_blocks {
                 m[i] = m[k];
                 m[k] = t;
             }
-            f(k+1,m);
+            f(k+1,m);//回溯
             {
                 int t = m[i];
                 m[i] = m[k];

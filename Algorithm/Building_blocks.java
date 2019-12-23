@@ -25,6 +25,7 @@ public class Building_blocks {
             }
             f(k+1,m);//回溯
             {
+            //
                 int t = m[i];
                 m[i] = m[k];
                 m[k] = t;

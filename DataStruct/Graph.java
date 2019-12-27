@@ -11,7 +11,7 @@ public class Graph {
     private boolean[] isVisited ;
     public static void main(String[] args) {
         int n = 5; //结点的个数
-        String Vertexs[] = {"A","B","C","D","E"};
+        String Vertexs[] = {"A","B","C","D","E"};//顶点值
         //创建图对象
         Graph graph = new Graph(n);
         //添加顶点

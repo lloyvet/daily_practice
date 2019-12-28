@@ -2,6 +2,7 @@ package Stack;
 
 public class LinkedStack
 {
+    //
     Node top = new Node() ;
 
     public void push(int val){

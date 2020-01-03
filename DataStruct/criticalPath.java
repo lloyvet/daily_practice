@@ -1,6 +1,7 @@
 package GraphDemo;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Stack;
 
 public class criticalPath {
@@ -87,14 +88,31 @@ class graph{
         for(int i = 0; i < end.length; i++){
             end[i] = L[i] - e[i];
         }
-
+        HashMap<Integer,Integer> map = new HashMap<>();
         System.out.println(Arrays.toString(end));
         int n = 0;
+        int temp = 0;
         for(int i = 0; i < end.length; i++){
+
             if(end[i] == 0){
-                System.out.println(vertex[edg[i].start] + " ->" + vertex[edg[i].end]);
+                //System.out.println(vertex[edg[i].start] + " ->" + vertex[edg[i].end]); //1 5 7 8 9
+                if(!map.containsKey(edg[i].start))
+                    map.put(edg[i].start,edg[i].end);   //只输出一条关键路径，如果有相同的顶点则是取其中一个
+                else
+                    continue;
+                    if(n == 0){
+                        System.out.print(vertex[edg[i].start] + " ->");
+                        n++;
+                    }else{
+                        System.out.print(vertex[map.get(edg[temp].start)]+ " ->");
+                    }
+                    temp = i;
+
+
             }
+
         }
+
     }
     public void addEdge(){
 

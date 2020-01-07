@@ -2,6 +2,7 @@ package Oj;
 
 public class Building_blocks {
     public static void main(String[] args) {
+        //
         int[] m = {0,1,2,3,4,5,6,7,8,9};
         f(0,m);
         System.out.println(count);

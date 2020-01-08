@@ -4,7 +4,6 @@
             sb.append(head.val);
             head = head.next;
         }
-		//
         double sum = 0;
         int length = sb.length();
         

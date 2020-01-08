@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class Graph {
     ArrayList<String> vertexList; //存储顶点集合
+    //
     int[][] edges;  //存储图对应的邻接矩阵
     int numOfEdges; //边的数目
     //定义boolean[]记录某个结点是否被访问

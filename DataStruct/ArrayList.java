@@ -1,6 +1,7 @@
 package Collections;
 
 public class Arraylist <E>{
+	//
     Object[] elementData;
     int size;
     private static final int DEFALT_CAPACITY = 10;

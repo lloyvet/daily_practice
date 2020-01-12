@@ -9,6 +9,7 @@
  */
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
+        //
         List<Double> res = new ArrayList<>();
         List<TreeNode> tree = new LinkedList<>();
         if(root == null)

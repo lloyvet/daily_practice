@@ -8,6 +8,7 @@ public class AVLTreeDemo {
         for(int i = 0; i < arr.length; i++){
             avl.add(new Node(arr[i]));
         }
+        //
         avl.midShow();
         System.out.println();
         System.out.println(avl.getRoot().height());

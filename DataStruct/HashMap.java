@@ -4,6 +4,7 @@ public class HashMapDemo<K,V> {
     Node[] table; //位数组
     int size;   //存放键值对的个数
     public HashMapDemo(){
+		//初始化
         table = new Node[16];
     }
     public void put(K key,V value){
